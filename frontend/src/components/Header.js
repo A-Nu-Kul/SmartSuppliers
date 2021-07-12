@@ -18,13 +18,20 @@ const Header = () => {
   }
     return(
     <header>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar bg='light' variant='light' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-              <Navbar.Brand> Smart Suppliers</Navbar.Brand>
+              <Navbar.Brand ><img
+        src="/logo.png"
+        width="250px"
+        className="d-inline-block align-top"
+        alt="React Bootstrap logo"/></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
+          <Nav.Link href="#link">ABOUT</Nav.Link>
+          <Nav.Link href="#link">PRODUCTS</Nav.Link>
+          <Nav.Link href="#link">BRANDS</Nav.Link>
             <Route render={({ history }) => <SearchBox history={ history }/>} />
             <Nav className='ml-auto'>
               <LinkContainer to='/cart'>

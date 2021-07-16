@@ -23,17 +23,42 @@ const Header = () => {
           <LinkContainer to='/'>
               <Navbar.Brand ><img
         src="/logo.png"
-        width="250px"
+        width="200px"
         className="d-inline-block align-top"
-        alt="React Bootstrap logo"/></Navbar.Brand>
+        alt="Smart logo"/></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav.Link href="#link">ABOUT</Nav.Link>
-          <Nav.Link href="#link">PRODUCTS</Nav.Link>
-          <Nav.Link href="#link">BRANDS</Nav.Link>
+          <Nav className='ml-auto'>
+            <LinkContainer to='/about'>
+              <Nav.Link href='/about'>ABOUT</Nav.Link>
+            </LinkContainer>
+            <NavDropdown title='PRODUCTS' id='basic-nav-dropdown'>
+              <NavDropdown.Item href="#action/2.1">WATER PUMPS</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.2">CABLE & PANNEL</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.3">GRINDER</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.4">SAW MILLS</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.5">RICE MILLS & COMBINE MILLS</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.6">CAR WASHER</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.7">BOREWELL SUBMERSIBLE</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.8">WELDING MACHINE</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.9">INDUCTION MOTORS</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.10">GAS GEYSER</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.11">VIBRATOR & NEEDLE</NavDropdown.Item>
+              <NavDropdown.Item href="#action/2.12">MISCELLANEOUS</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title='BRANDS' id='basic-nav-dropdown'>
+            <NavDropdown.Item href="#action/3.1">KIRLOSKAR</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">VARUNA</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">SHARP</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.4">DUKE</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.5">SHIVA</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.6">SHIMGE</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.7">SUBMERSIBLE</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
             <Route render={({ history }) => <SearchBox history={ history }/>} />
-            <Nav className='ml-auto'>
+            <Nav className='mr-auto'>
               <LinkContainer to='/cart'>
                 <Nav.Link><i className='fas fa-shopping-cart'></i> Cart</Nav.Link>
               </LinkContainer>

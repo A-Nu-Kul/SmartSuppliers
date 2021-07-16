@@ -9,6 +9,7 @@ import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
+import Brands from '../components/Brands'
 
 const HomeScreen = ({ match }) => {
     const keyword = match.params.keyword
@@ -41,6 +42,7 @@ const HomeScreen = ({ match }) => {
             <Paginate pages={pages} page={page} keyword={keyword ? keyword: ''} />
             </div>
             )}
+            <Brands />
      </div>
 
 )}

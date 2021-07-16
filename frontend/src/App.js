@@ -4,6 +4,8 @@ import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
+import AboutScreen from './screens/AboutScreen'
+import ContactScreen from './screens/ContactScreen'
 import ProductScreen from './screens/ProductScreen'
 import CartScreen from './screens/CartScreen'
 import LoginScreen from './screens/LoginScreen'
@@ -45,6 +47,8 @@ const App = () => {
          <Route path='/search/:keyword' component={HomeScreen} exact />
          <Route path='/page/:pageNumber' component={HomeScreen} exact />
          <Route path='/search/:keyword/page/:pageNumber' component={HomeScreen} exact />
+         <Route path='/contact' component={ContactScreen}/>
+         <Route path='/about' component={AboutScreen}/>
          <Route path='/' component={HomeScreen} exact />
       </Container>
     </main>

@@ -52,3 +52,43 @@ h2 {
 	color: #54a4d9;
 	background-color: #54a4d9 !important;
 }
+
+/* ------------Brands--------------- */
+.row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.small-container {
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.brands {
+	margin: 100px
+		auto;
+}
+.col-5-m {
+	width: 160px;
+}
+.col-5-m
+	img {
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(
+		100%
+	);
+}
+.col-5-m
+	img:hover {
+	filter: grayscale(
+		0
+	);
+}
+.menu-icon {
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+}

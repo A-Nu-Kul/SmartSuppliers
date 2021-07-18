@@ -21,6 +21,9 @@ export const Brands = () => {
                     <div className="col-5-m">
                         <img src="c5.jpg" alt='Varuna Brand'/>
                     </div>
+                    <div className="col-5-m">
+                        <img src="c6.jpg" alt='Shiva Brand'/>
+                    </div>
                 </div>
             </div>
             

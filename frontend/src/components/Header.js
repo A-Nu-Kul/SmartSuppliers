@@ -54,7 +54,6 @@ const Header = () => {
             <NavDropdown.Item href="#action/3.4">DUKE</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.5">SHIVA</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.6">SHIMGE</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.7">SUBMERSIBLE</NavDropdown.Item>
             </NavDropdown>
           </Nav>
             <Route render={({ history }) => <SearchBox history={ history }/>} />

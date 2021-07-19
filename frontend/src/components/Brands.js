@@ -4,7 +4,10 @@ export const Brands = () => {
     return (
         <div className='brands'>
             <div className='small-container'>
+                <div className='title'>
                 <h1>Our Brands</h1>
+                <div className='underline'></div>
+                </div>
                 <div className='row'>
                     <div className="col-5-m">
                         <img src="c1.jpg" alt='Kirloskar Brand' />

@@ -6,7 +6,7 @@ const Footer = () => <footer className="page-footer font-small blue pt-4 py-5 bg
     <div className="container-fluid text-center text-md-left">
         <div className="row">
             <div className="col-md-6 mt-md-0 mt-3">
-            <img src="logo.png" alt="Smart Suppliers Footer logo" style={{width: 100}}/>
+            <img src="/logo.png" alt="Smart Suppliers Footer logo" style={{width: 100}}/>
             <br />
                 <p>We have been providing technical knowhow and consulting to more than 100 industries all over Nepal; this along with our supply of excellent branded products and services gives us the added advantage of ensuring high end quality and performance.</p>
                 <p>We provide complete solutions for all industrial & domestic water needs.</p>
